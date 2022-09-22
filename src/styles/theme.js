@@ -78,6 +78,7 @@ const palette = {
   radioButtonColor: '#336e90',
   coralColor: 'coral',
   gold: '#FFD8A9',
+  FBColor: '#4267B2',
 };
 
 const theme = createTheme({
@@ -160,6 +161,7 @@ const theme = createTheme({
     buttonColor: palette.lighterBlue,
     coral: palette.coralColor,
     gold: palette.gold,
+    FBColor: palette.FBColor,
   },
   spacing: {
     '-xxs': -2,

@@ -14,6 +14,8 @@ import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
 import theme from '../styles/theme';
 
 const Detail = ({navigation}) => {
+  // GOOGLE SIGN OUT
+
   const signOut = async () => {
     try {
       await GoogleSignin.revokeAccess();
