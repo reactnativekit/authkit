@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "900119281766",
+    "project_id": "authkit-ea328",
+    "storage_bucket": "authkit-ea328.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900119281766:android:da043930e68f918522ada7",
+        "android_client_info": {
+          "package_name": "com.authkit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900119281766-ncga6s272skot5b2rlfc85tc1vdn8qlq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.authkit",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "900119281766-9dst988u81g1h3c8ovbkaddvo3i5be7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbXcfpOnd771pqAp7nG5vg6hKR-lzkoQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900119281766-9dst988u81g1h3c8ovbkaddvo3i5be7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
