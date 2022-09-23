@@ -4,6 +4,7 @@ import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import auth from '@react-native-firebase/auth';
 import theme from '../styles/theme';
 import {LoginManager, AccessToken} from 'react-native-fbsdk-next';
+import Toast from 'react-native-simple-toast';
 
 const Login = ({navigation}) => {
   const [userData, setUserData] = useState({});
@@ -27,6 +28,9 @@ const Login = ({navigation}) => {
 
     //navigation
     navigation.navigate('Detail');
+
+    //Google Toast Message
+    Toast.showWithGravity('Google SignIn Successful!', Toast.LONG, Toast.TOP);
 
     // Sign-in the user with the credential
     return auth().signInWithCredential(googleCredential);
@@ -59,6 +63,9 @@ const Login = ({navigation}) => {
 
     //navigation
     navigation.navigate('Detail');
+
+    //Facebook Toast Message
+    Toast.showWithGravity('Facebook SignIn Successful!', Toast.LONG, Toast.TOP);
 
     // Sign-in the user with the credential
     return auth().signInWithCredential(facebookCredential);

@@ -12,6 +12,7 @@ import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import auth from '@react-native-firebase/auth';
 import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
 import theme from '../styles/theme';
+import Toast from 'react-native-simple-toast';
 
 const Detail = ({navigation}) => {
   // GOOGLE SIGN OUT
@@ -21,7 +22,14 @@ const Detail = ({navigation}) => {
       await GoogleSignin.revokeAccess();
       await auth().signOut();
       console.log('Sign Out Successfully!!');
+      //navigation
       navigation.navigate('Login');
+      //Google Toast Message
+      Toast.showWithGravity(
+        'Google SignOut Successful!',
+        Toast.LONG,
+        Toast.TOP,
+      );
       // Google Account disconnected from your app.
       // Perform clean-up actions, such as deleting data associated with the disconnected account.
     } catch (error) {
