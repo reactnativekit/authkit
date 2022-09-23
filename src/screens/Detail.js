@@ -25,11 +25,7 @@ const Detail = ({navigation}) => {
       //navigation
       navigation.navigate('Login');
       //Google Toast Message
-      Toast.showWithGravity(
-        'Google SignOut Successful!',
-        Toast.LONG,
-        Toast.TOP,
-      );
+      Toast.show('Google SignOut Successful!');
       // Google Account disconnected from your app.
       // Perform clean-up actions, such as deleting data associated with the disconnected account.
     } catch (error) {

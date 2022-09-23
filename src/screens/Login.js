@@ -30,7 +30,7 @@ const Login = ({navigation}) => {
     navigation.navigate('Detail');
 
     //Google Toast Message
-    Toast.showWithGravity('Google SignIn Successful!', Toast.LONG, Toast.TOP);
+    Toast.show('Google SignIn Successful!');
 
     // Sign-in the user with the credential
     return auth().signInWithCredential(googleCredential);
@@ -65,7 +65,7 @@ const Login = ({navigation}) => {
     navigation.navigate('Detail');
 
     //Facebook Toast Message
-    Toast.showWithGravity('Facebook SignIn Successful!', Toast.LONG, Toast.TOP);
+    Toast.show('Facebook SignIn Successful!');
 
     // Sign-in the user with the credential
     return auth().signInWithCredential(facebookCredential);
